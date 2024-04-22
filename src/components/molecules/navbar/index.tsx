@@ -8,6 +8,7 @@ import { NAV_ITEM } from './../../../constant/NAV_ITEM';
 const Navbar = () => {
     const [isOpenSidebar, setIsOpenSidebar] = useState(false);
     return (
+        <div>
         <nav className="bg-white h-[9vh] p-3">
             <div className="flex justify-between items-center">
                 <div className="flex items-center gap-3 ">
@@ -57,6 +58,8 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
+        {isOpenSidebar ? <div className="h-[91vh] bg-red-500"></div> : null}
+        </div>
     )
 }
 
