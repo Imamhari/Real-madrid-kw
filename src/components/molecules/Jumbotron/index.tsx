@@ -1,16 +1,16 @@
+import { ITEM_NEWS } from '../../../constant/const';
 import CardNews from './../../atoms/CardNews/index';
 
 const Jumbotron = () => {
   return (
     <div className='m-5 lg:mx-20'>
-      <CardNews isHeader/>
+       {ITEM_NEWS.slice(0, 1).map((item) => (
+          <CardNews isHeader imageUrl={item.img} title={item.title}/>
+        ))}
       <span className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
-      <CardNews/>
-      <CardNews/>
-      <CardNews/>
-      <CardNews/>
-      <CardNews/>
-      <CardNews/>
+        {ITEM_NEWS.slice(1).map((item) => (
+          <CardNews imageUrl={item.img} title={item.title}/>
+        ))}
       </span>
     </div>
   )

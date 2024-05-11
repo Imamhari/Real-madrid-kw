@@ -3,7 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { CiUser } from "react-icons/ci";
 import { IoMdMore } from "react-icons/io";
 import NavItem from './../../atoms/NavItems/index';
-import { NAV_ITEM } from './../../../constant/NAV_ITEM';
+import { NAV_ITEM } from '../../../constant/const';
 
 const Navbar = () => {
     const [isOpenSidebar, setIsOpenSidebar] = useState(false);
