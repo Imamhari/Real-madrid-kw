@@ -30,10 +30,10 @@ const CardNews = ({isHeader, title, imageUrl } : {isHeader?:boolean, title:strin
                </>
             ) : (
                 <>
-                    <div className='overflow-hidden rounded-xl  cursor-pointer xl:rounded-xl '>
+                    <div className='overflow-hidden rounded-xl cursor-pointer  '>
                         <img src={imageUrl} 
                         alt="image-news"
-                        className='group-hover:scale-105 transition-all ease-in-out duration-[1500ms] xl:rounded-xl hover:rounded-xl' />
+                        className='group-hover:scale-105 transition-all ease-in-out duration-[1500ms] hover:rounded-xl rounded-xl' />
                     </div>
                     <a 
                         href="#" 
