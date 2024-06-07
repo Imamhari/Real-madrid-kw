@@ -90,11 +90,11 @@ export const NEXT_EVENT : Event[] = [
     },
     {
         logoTeamHome:
-            "https://cdn.freebiesupply.com/logos/large/2x/real-madrid-c-f-logo-png-transparent.png",
+        "https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1010px-FC_Barcelona_%28crest%29.svg.png",
         logoTeamAway:
-            "https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1010px-FC_Barcelona_%28crest%29.svg.png",
-        nameTeamHome: "Real Madrid",
-        nameTeamAway: "Barcelona",
+        "https://cdn.freebiesupply.com/logos/large/2x/real-madrid-c-f-logo-png-transparent.png",
+        nameTeamHome: "Barcelona",
+        nameTeamAway: "Real Madrid",
         competitionType: "LaLiga",
         steps: "Final",
         date: "2023-1-23",

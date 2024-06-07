@@ -22,7 +22,7 @@ const NextEvent = () => {
           Filter Teams (7)
         </button>
       </div>
-      <div className="flex flex-row gap-7">
+      <div className="flex flex-row lg:flex-wrap gap-7">
         {NEXT_EVENT.map((item) => (
           <Event
           competitionType={item.competitionType}
