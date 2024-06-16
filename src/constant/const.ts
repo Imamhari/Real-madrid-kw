@@ -99,5 +99,29 @@ export const NEXT_EVENT : Event[] = [
         steps: "Final",
         date: "2023-1-23",
         stadium: "Santiago Bernabeu"
-    }
+    },
+    {
+        logoTeamHome:
+            "https://cdn.freebiesupply.com/logos/large/2x/real-madrid-c-f-logo-png-transparent.png",
+        logoTeamAway: 
+            "https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--de3f6087-2031-4d33-b321-871e0f7ff532/dt4pinj0vw0t0cvz7za6mhmzy.app.png?preferwebp=true&width=144&height=144", 
+        nameTeamHome: "Real Madrid", 
+        nameTeamAway: "Dortmund", 
+        competitionType: "UCL", 
+        steps: "Match week 21", 
+        date: "2022-11-23",
+        stadium: "Santiago Bernabeu"
+        },
+        {
+            logoTeamHome:
+            "https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1010px-FC_Barcelona_%28crest%29.svg.png",
+            logoTeamAway:
+            "https://cdn.freebiesupply.com/logos/large/2x/real-madrid-c-f-logo-png-transparent.png",
+            nameTeamHome: "Barcelona",
+            nameTeamAway: "Real Madrid",
+            competitionType: "LaLiga",
+            steps: "Final",
+            date: "2023-1-23",
+            stadium: "Santiago Bernabeu"
+        }
 ]

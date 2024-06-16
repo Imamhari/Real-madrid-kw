@@ -24,12 +24,10 @@ const Event = ({
   steps,
   date,
   stadium
-}
-
-  ) => {
+}: Event ) => {
   return (
     <div className="w-[320px]">
-      <div className="bg-[#132143] text-white  rounded-t-lg p-10  pt-4 border flex flex-col ">
+      <div className="bg-[#132143] text-white  rounded-lg p-10  pt-4 border text-center flex flex-col gap-2 pb-10">
       <div className="grid grid-cols-3 items-center pt-5">
         <div className="flex flex-wrap gap-2">
             <img src={logoTeamAway} 

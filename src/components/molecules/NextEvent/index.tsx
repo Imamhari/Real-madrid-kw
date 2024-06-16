@@ -5,7 +5,8 @@ import { motion } from 'framer-motion';
 import { LuSettings2 } from "react-icons/lu";
 import Event from './../../atoms/Event/index';
 import { NEXT_EVENT } from './../../../constant/const';
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 const NextEvent = () => {
    const [openModal, setOpenModal] = useState(false)
   return (
@@ -22,20 +23,24 @@ const NextEvent = () => {
           Filter Teams (7)
         </button>
       </div>
-      <div className="flex flex-row lg:flex-wrap gap-7">
+      <div>
+        <Swiper spaceBetween={50} slidesPerView={3}>
         {NEXT_EVENT.map((item) => (
-          <Event
-          competitionType={item.competitionType}
-          key={item.nameTeamAway}
-          date={item.date}
-          logoTeamAway={item.logoTeamAway}
-          logoTeamHome={item.logoTeamHome}
-          nameTeamAway={item.nameTeamAway}
-          nameTeamHome={item.nameTeamHome}
-          steps={item.steps}
-          stadium={item.stadium}
-          />
-        ))}
+          <SwiperSlide>
+          <Event 
+            competitionType={item.competitionType}
+            key={item.nameTeamAway}
+            date={item.date}
+            logoTeamAway={item.logoTeamAway}
+            logoTeamHome={item.logoTeamHome}
+            nameTeamAway={item.nameTeamAway}
+            nameTeamHome={item.nameTeamHome}
+            steps={item.steps}
+            stadium={item.stadium}
+            />
+          </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <motion.div
        initial={{opacity: 0}}
